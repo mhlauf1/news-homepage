@@ -1,0 +1,142 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333333; }
+
+.blog-item2 {
+  display: flex;
+  background-color: red; }
+
+li {
+  list-style: none; }
+
+@keyframes hover {
+  50% {
+    transform: translateX(10px); } }
+
+.mobile-nav-links > label {
+  top: 30px;
+  left: 30px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  z-index: 9999; }
+
+.mobile-nav-links label span,
+.mobile-nav-links label span::before,
+.mobile-nav-links label span::after {
+  transition: background 0.3s, transform 0.3s; }
+
+.mobile-nav-links label span,
+.mobile-nav-links label span::before,
+.mobile-nav-links label span::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background: #b3b3b3; }
+
+.mobile-nav-links label span::before {
+  transform: translateY(-12px); }
+
+.mobile-nav-links label span::after {
+  transform: translateY(12px); }
+
+.mobile-nav-links .mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 350px;
+  left: -350px;
+  overflow: hidden;
+  background: #bdddff;
+  transition: 0.3s ease;
+  padding: 40px 30px; }
+  .mobile-nav-links .mobile-nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .mobile-nav-links .mobile-nav > div a {
+      font-size: 2.5rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      font-family: "Monoton", cursive;
+      background: linear-gradient(-90deg, #49a4ed 30%, #3d00a9 110%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .mobile-nav-links .mobile-nav > div a i {
+        font-size: 4rem;
+        background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .mobile-nav-links .mobile-nav > div label {
+      width: 30px;
+      height: 30px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .mobile-nav-links .mobile-nav > div label span,
+      .mobile-nav-links .mobile-nav > div label span:before,
+      .mobile-nav-links .mobile-nav > div label span:after {
+        background: #4d4d4d; }
+  .mobile-nav-links .mobile-nav > ul {
+    margin-top: 30px;
+    counter-reset: nav-link-count; }
+    .mobile-nav-links .mobile-nav > ul li {
+      cursor: pointer;
+      padding: 10px 0;
+      transform: translateX(-30px);
+      opacity: 0;
+      transition: 0.4s ease;
+      counter-increment: nav-link-count; }
+      .mobile-nav-links .mobile-nav > ul li a {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #333333;
+        display: block; }
+        .mobile-nav-links .mobile-nav > ul li a::after {
+          content: " : " counter(nav-link-count); }
+      .mobile-nav-links .mobile-nav > ul li:hover {
+        animation: hover 0.5s; }
+
+.mobile-nav-links input[type="checkbox"] {
+  display: none; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ label {
+    opacity: 0;
+    pointer-events: none; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav {
+    left: 0; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav label span {
+    background: transparent; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav label span:before {
+    transform: rotate(-45deg); }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav label span:after {
+    transform: rotate(45deg); }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav label span:before,
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav label span:after {
+    transition-delay: 0.2s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li {
+    opacity: 1;
+    transform: translateX(0px); }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(1) {
+    transition-delay: 0.1s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(2) {
+    transition-delay: 0.2s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(3) {
+    transition-delay: 0.3s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(4) {
+    transition-delay: 0.4s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(5) {
+    transition-delay: 0.5s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(6) {
+    transition-delay: 0.6s; }
+  .mobile-nav-links input[type="checkbox"]:checked ~ nav ul li:nth-child(7) {
+    transition-delay: 0.7s; }

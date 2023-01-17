@@ -1,139 +1,164 @@
-<!-- Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
-  people.
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-
-  <div class="attribution">
+<!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mike Laufersweiler</a>.
   </div> -->
-  <!DOCTYPE html>
-  <html lang="en">
-  
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>News homepage</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="index.css">
-  </head>
-  
-  <body>
-      <main>
-          <section class="container">
-              <header>
-                  <div>
-                      <img src="./assets/images/logo.svg" alt="Logo">
-                  </div>
-                  <nav>
-                      <ul>
-                          <li>Home</li>
-                          <li>News</li>
-                          <li>Popular</li>
-                          <li>Trending</li>
-                          <li>Categories</li>
-                      </ul>
-                  </nav>
-              </header>
-              <div id="hero-img">
-                  <img src="./assets//images/image-web-3-desktop.jpg" alt="Hero image">
-              </div>
-              <div id="hero-text">
-                  <h1>The Bright Future of Web 3.0?</h1>
-              </div>
-              <div id="hero-sub-text">
-                  <p class="hero-sub-text">We dive into the next evolution of the web that claims to put the power of the
-                      platforms back into the
-                      hands of the people. But is it really fulfilling its promise?</p>
-                  <button class="hero-cta-btn">Read more</button>
-              </div>
-              <div id="featured-posts">
-                  <h2>New</h2>
-                  <div class="articles-container">
-                      <article>
-                          <h4>Hydrogen VS Electric Cars</h4>
-                          <p>
-                              Will hydrogen-fueled cars ever catch up to EVs?
-                          </p>
-                      </article>
-                      <div class="divider"></div>
-                      <article>
-                          <h4>The Downsides of AI Artistry</h4>
-                          <p>
-                              What are the possible adverse effects of on-demand AI image generation?
-                          </p>
-                      </article>
-                      <div class="divider"></div>
-                      <article>
-                          <h4>Is VC Funding Drying Up?</h4>
-                          <p>
-                              Private funding by VC firms is down 50% YOY. We take a look at what that means. </p>
-                      </article>
-                  </div>
-              </div>
-          </section>
-          <section class="blog-container">
-              <div class="blog-item">
-                  <img src="./assets/images/image-retro-pcs.jpg" alt="Repto PCs">
-                  <div class="blog-item-flex">
-                      <h3>01</h3>
-                      <h5>Reviving Retro PCs</h5>
-                      <p>What happens when old PCs are given modern upgrades?</p>
-                  </div>
-              </div>
-              <div class="blog-item">
-                  <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops">
-                  <div class="blog-item-flex">
-                      <h3>02</h3>
-                      <h5>Top 10 Laptops of 2022</h5>
-                      <p>Our best picks for various needs and budgets.</p>
-                  </div>
-              </div>
-              <div class="blog-item">
-                  <img src="./assets/images/image-gaming-growth.jpg" alt="Growth of Gaming">
-                  <div class="blog-item-flex">
-                      <h3>03</h3>
-                      <h5>The Growth of Gaming</h5>
-                      <p>How the pandemic has sparked fresh opportunities.</p>
-                  </div>
-              </div>
-          </section>
-      </main>
-  </body>
-  
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
+</head>
+
+<body id="main">
+    <main>
+        <section class="container">
+            <header>
+                <div>
+                    <img src="./assets/images/logo.svg" alt="Logo">
+                </div>
+                <nav>
+                    <ul class="desktop-nav-links">
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>Popular</li>
+                        <li>Trending</li>
+                        <li>Categories</li>
+                    </ul>
+                    <!-- <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+                        <img src="./assets/images/icon-menu.svg" alt="Menu button">
+                    </a> -->
+                    <div class="toggle-container">
+                        <div class="bar1">
+                        </div>
+                        <div class="bar2">
+                        </div>
+                        <div class="bar3">
+                        </div>
+                    </div>
+                    <div class="backdrop"></div>
+                    <div class="mobile-nav">
+                        <ul class="mobile-nav__items">
+                            <li class="mobile-nav__item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Popular</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Trending</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Categories</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </header>
+            <div id="hero-img">
+                <img src="./assets//images/image-web-3-desktop.jpg" alt="Hero image">
+            </div>
+            <div id="hero-text">
+                <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div id="hero-sub-text">
+                <p class="hero-sub-text">We dive into the next evolution of the web that claims to put the power of the
+                    platforms back into the
+                    hands of the people. But is it really fulfilling its promise?</p>
+                <button class="hero-cta-btn">Read more</button>
+            </div>
+            <div id="featured-posts">
+                <h2>New</h2>
+                <div class="articles-container">
+                    <article>
+                        <h4>Hydrogen VS Electric Cars</h4>
+                        <p>
+                            Will hydrogen-fueled cars ever catch up to EVs?
+                        </p>
+                    </article>
+                    <div class="divider"></div>
+                    <article>
+                        <h4>The Downsides of AI Artistry</h4>
+                        <p>
+                            What are the possible adverse effects of on-demand AI image generation?
+                        </p>
+                    </article>
+                    <div class="divider"></div>
+                    <article>
+                        <h4>Is VC Funding Drying Up?</h4>
+                        <p>
+                            Private funding by VC firms is down 50% YOY. We take a look at what that means. </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="blog-container">
+            <div class="blog-item">
+                <img src="./assets/images/image-retro-pcs.jpg" alt="Repto PCs">
+                <div class="blog-item-flex">
+                    <h3>01</h3>
+                    <h5>Reviving Retro PCs</h5>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops">
+                <div class="blog-item-flex">
+                    <h3>02</h3>
+                    <h5>Top 10 Laptops of 2022</h5>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="./assets/images/image-gaming-growth.jpg" alt="Growth of Gaming">
+                <div class="blog-item-flex">
+                    <h3>03</h3>
+                    <h5>The Growth of Gaming</h5>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+            <div class="new"></div>
+        </section>
+
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            var x = document.getElementById("mobile-nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        var backdrop = document.querySelector(".backdrop");
+        var toggleButton = document.querySelector(".toggle-container");
+        var mobileNav = document.querySelector(".mobile-nav");
+
+        backdrop.addEventListener("click", function () {
+            mobileNav.classList.remove("open");
+            backdrop.classList.remove("open");
+            toggleButton.classList.remove("active", "change");
+        });
+
+        toggleButton.addEventListener("click", function () {
+            mobileNav.classList.add("open");
+            toggleButton.classList.add("active", "change");
+            backdrop.classList.add("open");
+        });
+    </script>
+</body>
+
+</html>
